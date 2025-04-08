@@ -1,0 +1,115 @@
+\documentclass{beamer}
+\usetheme{Berlin}
+\usefonttheme{serif}
+
+\setbeamercolor{frametitle}{bg=black,fg=white}
+\setbeamercolor{title}{bg=black,fg=white}
+\setbeamercolor{section in head/foot}{bg=brown,fg=white}
+\setbeamercolor{subsection in head/foot}{bg=brown,fg=white}
+\setbeamercolor{navigation symbols}{fg=brown}
+\setbeamercolor{normal text}{fg=black}
+
+\fontsize{14}{16}\selectfont
+\fontseries{b}\selectfont
+
+\usepackage{fbox}
+\setlength{\fboxrule}{1pt}
+\setlength{\fboxsep}{0pt}
+
+\usepackage{shadow}
+
+\title{WordVerse Project Overview}
+\subtitle{}
+\author{\bfseries Sheetal Lodhi \and \bfseries Sonakshi Raj }
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}{\bfseries Introduction}
+    \begin{itemize}
+        \item \bfseries WordVerse is a web application designed for playing the Wordle game.
+        \item \bfseries We've got two awesome modes for you: 'Guess My Word' where you try to figure out a mystery word, and 'I'll Guess Yours' where our chatbot tries to read your mind
+    \end{itemize}
+\end{frame}
+
+\section{Project Motivation}
+
+\begin{frame}{\bfseries Why WordVerse?}
+    \begin{itemize}
+        \item \bfseries WordVerse is an interactive game that requires real-time communication between the client and server. This makes it an ideal project for learning WebSockets, which enable bi-directional communication between the client and server
+        \item \bfseries It offers us a opportunity to learn golang. 
+\end{frame}
+
+\section{Key Features}
+
+\begin{frame}{\bfseries Key Features of WordVerse}
+    \begin{itemize}
+        \item \bfseries Classic Wordle game.
+        \item \bfseries NPC Character (bot) that interacts with users and assists in gameplay.
+        \item \bfseries Responsive design optimized for different devices.
+        \item \bfseries Real-time communication using WebSocket.
+        \item \bfseries Backend implemented in Go.
+        \item \bfseries User-selected secret word functionality.
+    \end{itemize}
+\end{frame}
+
+\section{Technologies Used}
+
+\begin{frame}{\bfseries Technologies and Tools}
+    \begin{itemize}
+        \item \bfseries Frontend: React, CSS.
+        \item \bfseries Backend: Go, WebSocket.
+        \item \bfseries Libraries: LaTeX, Gin.
+    \end{itemize}
+\end{frame}
+
+\section{Project Challenges}
+
+\begin{frame}{\bfseries Overcoming Challenges}
+    \begin{itemize}
+        \item \bfseries Learning and mastering React for frontend development.
+        \item \bfseries Implementing real-time communication using WebSocket.
+        \item \bfseries Integrating the NPC character (bot) with custom logic.
+        \item \bfseries Setting up and configuring the Go backend with WebSocket.
+    \end{itemize}
+\end{frame}
+
+\section{Proud Achievements}
+
+\begin{frame}{\bfseries Proud Moments}
+    \begin{itemize}
+        \item \bfseries Custom-built NPC character (bot) with unique interaction logic.
+        \item \bfseries Efficient and clean file structure that made the project easy to manage.
+        \item \bfseries Successfully implementing real-time communication, enhancing user interaction.
+        \item \bfseries The successful deployment of the project and the positive feedback received.
+    \end{itemize}
+\end{frame}
+
+\section{File Structure Overview}
+
+\begin{frame}{\bfseries Understanding the File Structure}
+    \begin{itemize}
+        \item \bfseries Frontend Directory:
+            \begin{itemize}
+                \item \bfseries src/components: Contains React components.
+                \item \bfseries src/botcomponents: Special components related to the NPC bot.
+                \item \bfseries App.js: Entry point of the React application.
+                \item \bfseries index.js: Main file for rendering the app.
+                \item \bfseries websocket.js: Handles WebSocket connections.
+            \end{itemize}
+        \item \bfseries Backend Directory:
+            \begin{itemize}
+                \item \bfseries main.go: Entry point for the backend server.
+                \item \bfseries words.txt: Contains the list of words for the game.
+                \item \bfseries go.mod/go.sum: Dependency management for Go.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\section

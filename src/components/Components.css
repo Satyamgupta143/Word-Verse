@@ -1,0 +1,579 @@
+.nav-items {
+    display : flex ;
+    justify-content : space-between ;
+    align-items : center ;
+    color : #5c5d70 ;
+    height : 65px ;
+    padding : 20px ;
+    position: sticky ;
+    top : 0 ;
+    background-color : #fff ;
+    z-index : 1000 ;
+    width : 100% ;
+    box-shadow : 0 2px 5px rgba(0, 0, 0, 0.1) ; 
+}
+
+.logo {
+    display : flex ;
+    margin-left : 30px ;
+    align-items : center ;
+}
+
+.nav---list {
+    display : flex ;
+    list-style-type : none ;
+    margin-right : 30px;
+}
+
+.nav---list > li {
+    margin-left : 40px ;
+    cursor : pointer ;
+    font-size : larger ;
+}
+
+.mainContent {
+    display : flex ;
+    justify-content : space-evenly ;
+    flex-wrap: wrap;
+}
+
+.left-div {
+    display : flex ;
+    flex-direction : column ;
+    align-items : center ;
+    justify-content : center ;
+}
+
+.landingImg {
+    display : flex ;
+    max-width : 100% ;
+    height : 600px ;
+}
+
+.left-div > h1 {
+    font-size : 60px ;
+    line-height : 0.8 ;
+    font-weight : 500 ;
+    letter-spacing : 0 ;
+}
+
+.playNow{
+    padding : 20px ;
+    border-radius : 5px ;
+    background : #fafafa ;
+    border : 1px solid #dadbdf ;
+    color : white ; 
+    background-color : #ff2753 ;
+    cursor : pointer ;
+    font-size: x-large;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+}
+
+.about---game {
+    font-size : 22px ;
+    font-weight : 500 ;
+    line-height : 1.4em ;
+    color : #585e71 ;
+    font-family: "Margarine", sans-serif;
+    font-weight: bolder;
+}
+
+.rules {
+    height : 100vh ;
+    font-family : "Kode Mono", monospace ;
+    font-size : 1.2rem ;
+    line-height : 1.5 ;
+    width : 100% ;
+    color : black ;
+    padding-top : 100px ;
+    background : #f0f0f0 ;
+}
+
+.rules-section {
+    max-width : 1200px ;
+    margin : 0 auto ;
+    text-align : center ;
+    height : 100vh ;
+    display : flex ;
+    justify-content : center ;
+    flex-direction : column ;
+
+}
+
+.rules-section h1 {
+    font-family : "Lilita One", sans-serif ;
+    font-size : 2.5rem ;
+    color : white ;
+    margin-bottom : 20px ;
+}
+
+.rule-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.rule-button {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+    margin: 10px;
+    color: #333;
+    width: 300px;
+    height: 400px;
+}
+
+.rule-button:hover {
+    transform: translateY(-5px);
+    background: #f1f1f1;
+}
+
+.rule-icon {
+    font-size: 10em;
+    margin-bottom: 10px;
+}
+
+.rule-button h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color : #666 ;
+}
+
+.rule-button p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #7c7d7f;
+}
+
+.play-button {
+    background:  #ff5f5f;
+    border: none;
+    color: #fff;
+    font-family : "Kode Mono", monospace;
+    padding: 20px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    transition: background 0.2s;
+    font-weight: bolder;
+}
+
+.play-button:hover {
+    background: grey;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 750px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.modal-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.modal-content ol {
+    text-align: left;
+}
+
+.modal-content ol li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.modal-content ol li span {
+    font-weight: bold;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    color: grey;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.rules--wordle {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.rules--left-div-w {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 45%;
+    padding: 20px;
+    color: #333;
+}
+
+.rules--right-div-w {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    padding: 20px;
+}
+
+.rules--right-div-img {
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+    padding-right: 45px;
+    height: auto;
+}
+
+.about {
+    height : 100vh ;
+    display : flex ;
+    justify-content : center ;
+    align-items : center ;
+    padding-left : 60px ;
+    width : 100% ;
+    color : #585e71 ;
+    font-family : "Lilita One", sans-serif ;
+}
+
+.about-content {
+    max-width : 800px ;
+    text-align : left ;
+    padding : 0 20px ;
+}
+  
+.about-heading {
+    font-size : 3rem ;
+    font-weight : bold ;
+    margin-bottom : 20px ;
+}
+  
+.about-subheading {
+    font-size : 2rem ;
+    font-weight : bold ;
+    margin-bottom : 10px ;
+}
+  
+.about-description {
+    font-size : 1.2rem ;
+    line-height : 1.6 ;
+    margin-bottom : 10px ;
+    
+}
+
+.team-member-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.team-member-info {
+    background-color: #ff2753;
+    border: 1px solid #ddd;
+    border-radius: 16px; 
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    margin-top: 20px;
+}
+
+.team-avatar {
+    margin-top: 20px;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.team-text {
+    margin-top: 10px;
+}
+
+
+.team-member {
+    font-size : 1.4rem ;
+    font-weight : bold ;
+    display: block;
+}
+
+.team-role {
+    font-size : 1.2rem ;
+    font-weight : normal ;
+    color: #ddd; 
+}
+
+.contact-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    margin: 0 5px;
+    color: black;
+    font-size: 1.5em;
+}
+
+.contact-icon:hover {
+    color: #005582;
+}
+
+
+.footer {
+    height : auto ; 
+    bottom : 0 ;
+    width : 100% ;
+    color : white ;
+    text-align : center ;
+    display : flex ;
+    justify-content : center ;
+    align-items : center ;
+}
+
+.musicPlay {
+    background-color : white ;
+    border  : 0 ;
+    border-radius : 5px ;
+    color : #5c5d70 ;
+    cursor : pointer ;
+    font-family : "Margarine", sans-serif ;
+    margin : 0 10px ;
+  }
+
+@media (max-width: 768px) {
+    .left-div > h1 {
+      font-size: 40px;
+    }
+    
+    .about---game{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .playNow {
+      font-size: large;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    
+    .rules {
+        height : auto ;
+        padding-bottom: 80px ;
+    }
+
+    .gameName {
+        margin-bottom : 10px ;
+    }
+
+    .about {
+        padding-left : 20px;
+        padding-right : 20px;
+        height : auto ;
+        padding-bottom : 20px ;
+    }
+
+    .about-heading {
+      font-size: 2rem;
+    }
+  
+    .about-subheading {
+      font-size: 1.5rem;
+    }
+  
+    .about-description {
+      font-size: 1rem;
+    }
+
+    .team-member{
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        font-size: 1rem;
+        font-weight: lighter;
+    }
+}
+  
+@media (max-width: 1200px) {
+
+    .mainContent{
+        display: flex;
+    
+    }
+
+    .about---game{
+        margin-top: 5px;
+        font-size: 25px;
+    }
+
+    .playNow {
+        margin-bottom: 40px;
+      }
+
+    .rules {
+        height : 700px ;
+    }
+
+    .about {
+        height: auto;
+    }
+
+    .footer{
+        bottom: 1px;
+    }
+  }
+
+@media (max-width: 480px) {
+
+    .nav-items {
+      padding: 5px;
+    }
+  
+    .nav---list > li {
+      margin: 5px 5px;
+      font-size: medium;
+    }
+  
+    .left-div > h1 {
+      font-size: 30px;
+    }
+    
+    .about---game{
+        margin-top: 5px;
+        font-size: 1rem;
+    }
+
+    .playNow {
+      font-size: medium;
+      padding: 10px;
+    }
+
+    .landingImg{
+        margin-bottom: 10px;
+    }
+  
+    .gameName{
+        font-size:  1.5rem;
+    }
+
+    .rules{
+        height : auto ;
+    }
+
+    .rules--left-div-w{
+        font-size: 0.8rem;
+    }
+
+    .about {
+        margin-right: 30px;
+    }
+
+    .about-heading {
+        margin-top: 25px;
+        font-size: 1.5rem;
+    }
+  
+    .about-subheading {
+        font-size: 1.2rem;
+    }
+  
+    .about-description {
+        font-size: 0.8rem;
+    }
+
+    .about-content {
+        max-width : 800px ;
+        text-align : left ;
+        padding : 0 20px ;
+    }
+    
+    .team-member-info {
+        width: 200px;
+        margin-right: 10px;
+    }
+    
+    .team-avatar {
+        margin-top: 10px;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .team-text {
+        margin-top: 10px;
+    }
+    
+    .team-member {
+        font-size : 1.2rem ;
+    }
+    
+    .team-role {
+        font-size : 1rem ;
+    }
+    
+    .contact-button {
+        margin-top: 10px;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .contact-icon {
+        margin: 0 5px;
+        color: black;
+        font-size: 1.2em;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+    
+    .musicPlay {
+        margin : 2px 10px;
+    }
+  }
+
+@media ( max-width : 1200px ){
+    .about {
+        padding-left : 20px;
+        padding-right : 20px;
+        height : auto ;
+        padding-bottom : 20px ;
+    }
+}

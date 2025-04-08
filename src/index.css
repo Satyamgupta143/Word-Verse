@@ -1,0 +1,39 @@
+body {
+  margin : 0 ;
+  box-sizing : border-box ;
+  background-color : white ;
+  font-family : "Lilita One", sans-serif ;
+  font-weight : bolder ;
+  overflow-x : hidden ;
+}
+
+.LandingPage {
+  height : 100vh ;
+}
+
+.wordleGame,
+.footer {
+  background-color : #ff2652 ;
+  width : 100% ;
+  color : white ;
+}
+
+@media ( max-width : 768px ) {
+  .LandingPage {
+    padding : 20px ; 
+    height : 900px ;
+  }
+}
+
+@media ( max-width : 1200px ) {
+  .LandingPage {
+    height : auto ;
+    padding : 30px ;
+  }
+}
+
+@media ( max-width : 480px ) {
+  .LandingPage {
+    padding : 10px ;
+  }
+}
