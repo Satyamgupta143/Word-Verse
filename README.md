@@ -104,7 +104,7 @@ Here’s a brief overview of the directory structure for the WordVerse project:
 The bot can assist with game rules, and even play the game by making guesses based on your secret word.
 
 ## Contributors
-- **Sonakshi Raj**
+- **Satyam Gupta**
 - **Sheetal Lodhi**
 
 
